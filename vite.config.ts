@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
-  base: './',  // ✅ THIS FIXES THE ROUTING ON NETLIFY
+  base: './', // ✅ CRITICAL: Fixes MIME type + routing on Netlify
   plugins: [
     react(),
     viteStaticCopy({
